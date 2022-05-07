@@ -23,6 +23,8 @@ __license__ = "Unlicense"
 import os
 
 current_language = os.getenv("LANG", "en_US")[:5]
+# another way to do the same as the code above:
+# current_language = os.getenv("LANG", "en_US").split(".")[0]
 
 msg = "Hello, World!" 
 
