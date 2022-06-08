@@ -1,0 +1,53 @@
+-----------------------------DAY-1---------------------------------------------
+
+How to find python version?
+
+How to use briefly a python command?
+
+How to find python sys.path?
+
+How to find more information about the version of python?
+
+How to use a module in python?
+
+How to find a good source of help of python language?
+
+How to find a source of knowledge about topics on python language?
+
+How to verify commits history on git?
+
+How to see env variables in Linux?
+
+Describe some importants conventions that exists on python programs\scripts.
+
+Where to use the 'export' command in Linux?
+
+How to activate a venv?
+
+What is glob?
+
+How to use pip to install a package?
+
+How to use help in ipython?
+
+How to see de source code, in python, of some features?
+
+How to use the general help in ipython?
+
+How to see all modules in ipython?
+
+-----------------------------DAY-2---------------------------------------------
+
+What is an object?
+
+How many types of data can types be separated in?
+
+How do we see the implementation of an object?
+
+What is a singleton?
+
+What happens in python when we make a assignement?
+
+How do we do to see the type of a variable?
+
+How to see the binary representation of a variable?

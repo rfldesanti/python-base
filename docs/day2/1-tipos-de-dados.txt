@@ -1,0 +1,54 @@
+Saber utilizar os dados é importante. Como guardar a informação cria
+um programa de qualidade.
+
+Protocolos e tipos de dados:
+
+	Ao receber um assignement, o Python faz uma INFERÊNCIA DE TIPO,
+	para tentar definir que tipo de valor é aquele que foi atribuído.
+	Ao definir um tipo, salva o valor, como binário, na memória,
+	e informa também o tipo inferido.
+	
+	Para saber o tipo inferido pelo python, basta utilizar
+	type([variavel])
+
+	Para saber a representação binária:
+	bin([valor]) (funciona para inteiros)
+
+	Para saber a representação inteira de um caractere
+	chr([valor])
+
+	Para saber a posição de memória na qual a variável foi salva:
+	id([valor])
+
+	Classe, categoria e tipo - são, a princípio, coisas iguais.
+
+	O que é um objeto? Um endereço de memória, uma posição, que
+	contém um tipo(classe, categoria) e um valor.
+
+	Tipo e valor são as principais características a serem
+	consideradas dentro da programação.
+
+	Dado é o valor em bytes; informação é o byte + tipo.
+
+	Tipos de dados são separados em dois tipos de categorias:
+
+		Primário(scalar types): representam um único valor.
+		Ex: int. Ao utilizar a função dir(int), é exibida
+		a implementação do objeto int, mostrando tudo que
+		pode ser feito com o objeto. Para os métodos sem
+		dunder, chamados de métodos públicos, podem ser
+		chamados no terminal. Os métodos com dunder são
+		chamados de protocolos.
+
+		Um protocolo é uma definição de comportamento que
+		o objeto pode ter. Por exemplo, o protocolo __add__
+		informa que o objeto possui a capacidade de ser
+		addible, ou seja, de somar. Logo, qualquer objeto
+		com addible é capaz de realizar a operação de soma.
+
+		Utilizar os métodos dunder é a forma "por baixo dos
+		panos" de realizar outras operações. Em outras palavras:
+		
+		numero.__add__(1) == numero + 1, ou seja, + 1 é abstração
+		da implementação do protocolo __add__
+		Compostos

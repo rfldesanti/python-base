@@ -1,0 +1,11 @@
+
+1 - Utilizar o HELP do python para entender melhor da linguagem;
+2 - Utilizar Python com mais frequência;
+3 - Estudar o "env" do Linux para entender como ele se relaciona com o 
+    Python;
+4 - Verificar, também relacionado a ENV, "unset" e "import"
+5 - Pyformat.com - para verificar questões de formatação
+6 - No terminal do ipython, help("FORMATTING"), para especificação
+    de formatação;
+7 - É importante saber os protocolos dos objetos python para dominar a 
+    linguagem. Os protocolos são "os métodos dunder";

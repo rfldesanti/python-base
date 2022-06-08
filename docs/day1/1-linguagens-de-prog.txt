@@ -1,0 +1,29 @@
+Computador - dispositivo eletrônico digital. Enviamos comandos e recebemos retornos. INPUT e OUTPUT são duas palavras-chave da programação. I/O
+
+Input - enviar dados para o computador;
+Output - como o input é devolvido;
+
+Dispositivo de input - teclado, mouse.
+Dispositivo de output - monitor, caixas de som;
+
+I\O não se limitam aos dispositivos, mas também ao PROCESSO que ocorre entre as duas ações.
+
+Computadores entendem apenas 0 e 1 - daí, digital, ou seja, digítos binários. 1 pode ser considerado LIGADO, enquanto 0 é desligado.
+
+As diferentes sequências de zeros e uns criam tudo o que o computador realiza - isso é tudo que o computador entende.
+
+Bits - é a padronização da comunicação entre homem e máquina. Os conjuntos de bits formam mensagens específicas.
+
+Linguagens de programação são abstrações, são formas facilitadas de escrever comandos para o computador - convertido em binário.
+
+ASM - primeira linguagem de programação. É uma linguagem de mais baixo nível.
+
+C - nível médio.
+
+Python - alto nível.
+
+Linguagens de programação estão caracterizadas, também, em COMPILADAS e INTERPRETADAS.
+
+COMPILADA - o programa é empacotado, precisando estar correto em toda sua integridade. Cada código precisa ser compilado para a plataforma específica. Os padrões de zeros e uns é gerado de uma só vez, para todo o código.
+
+INTERPRETADA - cada comando pode ser interpretado automaticamente. Todos os comandos são interpretados de maneira separada. É multiplataforma, podendo ser interpretado por qualquer plataforma. Cada comando é interpretado individualmente, sendo o padrão de zero e uns convertido durante a execução do programa.

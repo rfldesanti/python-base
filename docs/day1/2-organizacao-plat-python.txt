@@ -1,0 +1,19 @@
+O que é a plataforma Python?
+
+Python é um conjunto de coisas, não apenas uma linguagem de programação.
+
+PLR - Python Language Reference - especificação(design formal da linguagem): palavras reservadas, estruturas, comportamento, etc. É a base, a teoria do Python.
+
+É a partir da PLR que surgem as implementações de Python. Ou seja, a partir da PLR foram criados programas capazes de interpretar código Python.
+
+Cpython é a implementação oficial de Python. Foi criada pelo próprio criador do Python.
+
+Ecossistema - TUDO em torno da linguagem Python:
+
+	Comunidades
+
+	PSF - Python Software Foundation - protege a marca Python.
+
+	Pacotes e ferramentas
+
+	Pypi - respositório de pacotes Python

@@ -1,0 +1,81 @@
+Mensagens, ou comentários, são informações que colocamos no código para orientar quem irá ler o código ou até mesmo para o próprio programador em momentos futuros.
+
+Para utilizar comentários, utilizamos o "#";
+
+Utilizamos comentários em 3 situações:
+
+	- Para orientar ferramentas de testes, quando colocamos o comentário na
+frente da linha de código desejado para o teste;
+	- Orientações para compreensão do próprio código;
+	- para o #!(shebang), ou seja, informações para sistemas operacionais
+baseados em UNIX; são mensagens enviadas ao sistema operacional antes do
+código executar; Nesse último caso, temos o seguinte exemplo:
+
+	!#python2.7 - com isso, estamos dizendo para o sistema operacional que
+o código a seguir deve ser executado com o interpretador python versão 2.7
+
+Uma boa prática, ao se utilizar de scripts, é inserir o shebang no início
+ do arquivo e informar qual versão de python será utilizada. Com isso, ao
+ buscar no terminal "which python", inserir no arquivo, após o shebang, o
+ caminho retornado.
+
+Isso é necessário em razão de existirem muitas versões de python instaladas
+no sistema operacional.
+
+Uma maneira bem recomendada de determinar qual python é a utilizada no
+ambiente em questão. 
+
+É importante conhecer o ambiente porque muito do que for programado irá 
+utilizar as características disponíveis no ambiente
+
+Dada a importância do ambiente, a instrução para inciar o script python
+dever ser modificada para o formato abaixo:
+
+	#!/usr/bin/env python
+
+No qual estamos dizendo para, primeiramente, o programa utilizar o ambiente
+disponível e enviar esses dados do ambiente para o interpretador python
+
+É o env quem vai determinar a versão do python a ser utilizada. Por isso, trata-se de boa prática utilizar-se do env para iniciar scripts.
+
+Existe um tipo diferente de comentário que é utilizado em scripts Python.
+Ele aparece no começo do arquivo(depois do shebang, quando houver) e é
+multilinhas, sendo considerado a documentação do programa.
+
+O comentário é feito da seguinte forma:
+
+	""" [Aqui fica o texto, que pode ter quantas linhas forem
+	necessárias.
+	"""
+Essas linhas explicam o que o programa faz. Informam o nome do script e
+informando as características do programa e algumas especificações
+para utilização
+
+Pythin possui um guia de estilo, chamado PEP 8, que orienta como padronizar
+o código Python e regras acerca de comentários, espaços, linhas em branco, 
+etc.
+
+Geralmente, após a mensagem informativa, são exibidas algumas informações
+de versão, autoria, licença, etc, todas no seguinte estilo:
+
+	__version__ = "número da versão"
+	__author__ = "autor do script\programa"
+	__license__ = "licença sob a qual o programa existe"
+
+Essas informações são chamadas de metadados. São utilizadas pouco pelo
+python em si, sendo mais relevantes para a distribuição do programa.
+
+Para definição de bloco principal em Python, utiliza-se o seguinte método:
+
+	if__name__ == "__main__":
+
+Qualquer código abaixo dessa linha, será executado quando o programa
+começar a rodar
+
+Para utilização em linha de comando, podemos enviar a configuração de
+variável de ambiente antes de executar um script. Para a variável
+LANG, por exemplo, podemos fazer no terminal:
+
+	LANG=[língua] python3 [script.py]
+
+

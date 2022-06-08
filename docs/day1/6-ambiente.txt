@@ -1,0 +1,44 @@
+Em Python, é necessário criar um ambiente para que o programa funcione da
+mesma forma em qualquer computador, evitando conflitos. Para que qualquer
+programa ou script se comporte da mesma forma, independentemente do ambiente
+em que ele for executado, é preciso aprender a trabalhar com os ambientes.
+
+É possível gerar um ambiente isolado, durante o trabalho com python, para
+evitar conflitos durante executação ou até mesmo evitar problemas no
+sistema operacional.
+
+Linux utiliza, de forma nativa, vários programas escritos em pyhton. Para
+evitar riscos, conflitos com pacotes que possam ser instalados futuramente,
+é correto sempre gerar um ambiente virtual que isole o desenvolvimento do
+uso comum, diário, "normal", do sistema.
+
+Criar um ambiente virtual é criar uma pasta separada, onde há uma cópia
+do interpretador python, assim como da pasta de pacotes. Dessa forma, caso
+o ambiente virtual seja danificado, os danos se resguardam a esse local,
+e não a todo sistema.
+
+which python mostra onde o python está instalado no sistema
+
+python3 -m site exibe onde as pastas, pacotes e o interpretador python está
+localizado no sistema
+
+Para criar o ambiente virtual:
+
+python3 -m venv [.nome]
+
+A comunidade Python geralmente nomeia o ambiente virtual de .venv, pois, assim
+a pasta permanece oculta em sistemas UNIX.
+
+A venv busca limitar, isolar o espaço onde o trabalho é realizado, evitando
+que os pacotes sejam instalados na própria máquina "crua" do usuário. Criar
+uma .venv é encapsular uma cópia do Python, é criar um ambiente no qual
+quaisquer alterações não irão afetar o Python do próprio sistema
+
+ativar .venv - source .venv/bin/activate
+
+cada projeto necessita de uma venv separada
+
+glob - padrões de listagem de arquivos
+
+pip:
+python -m pip install [pacote]

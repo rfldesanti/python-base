@@ -1,0 +1,22 @@
+ipython:
+
+É um intepretador python com ferramentas extras e maiores facilidades.
+
+ao colocar uma interrogação na frente de um objeto, ele mostra documentação.
+Ex: int?
+
+No ipython, utilizando-se duas interrogações após o objeto de pesquisa,
+a ferramenta exibe o código fonte(para os que estiverem disponíveis em
+código python). Ex: sum??
+
+Para encontrar os documentos de ajuda do próprio ipython, utilizamos somente
+o '?' no terminal. Ex: ?
+
+Como verificar todos os módulos possíveis de serem importados no python:
+import + TAB
+
+Além disso, é possível verificar as funções dos módulos com:
+[módulo].[método] + ?
+
+Ao pesquisar um módulo, para saber quais métodos existem no módulo, basta
+utiulizar o nome do módulo + TAB. Ex: os. + TAB

@@ -1,0 +1,30 @@
+expression - toda instrução que espera um valor de retorno. O python deve
+executar uma ação e gerar uma resposta, um resultado. É como se fossem
+perguntas para o Python:
+
+Tudo para o que esperamos uma resposta é uma expression.
+
+1 + 1 retorna 2
+
+2 < 8 retorna True
+
+statement(declaração) - instrução que prepara o interpretador para fazer
+determinada tarefa. Ele prepara o intepretador para algo, você cria um
+ambiente, um estado específico. Não retorna valor:
+
+if, else, def, for, while, pass
+
+Geralmente um statement é utilizado em conjunto com uma expressão
+
+assignement(atribuição) - processa um valor, gerado por uma expressão, e o
+armazena:
+
+soma = 40 + 2
+soma += 3
+soma -= 3
+
+Protocolo - aquilo que um objeto é capaz de fazer;
+
+O interpretador Python resolve("calcula") da direita para a esquerda. Logo,
+numa atribuição, primeiro o interpretador analisa a expressão, guarda na
+memória, e, ao fim, atribui o valor calculado à variável.

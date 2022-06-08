@@ -1,0 +1,107 @@
+Textos são importantes! Python oferece muita facilidade para tratar textos!
+
+Não podemos concatenar float, apenas strings. Para isso, precisamos converter
+o que não for string para string.
+
+Python é tipagem dinâmica, porém tipagem forte, ou seja, os tipos precisam
+ser CLAROS para poderem ser manipulados.
+
+Quando existem muitos textos a serem concatenados, precisamos de
+interpolação. Na interpolação, usamos um TEMPLATE, que contém o texto
+a ser impresso, e um PLACEHOLDER, que é o espaço para a variável ser
+colocada. Ex:
+
+template = "O saldo do %s é o total de %d"
+
+No terminal do ipython, fazemos:
+
+template % (nome, saldo)
+
+Funcionamento básico de template:
+
+[mensagem string] % [variável]
+
+"Olá, meu nome é %s" % "Honesto"
+
+Quanto utilizamos diretamente um número após o operador de intepolação,
+o python converte automaticamente o número para string, ainda que o 
+placeholder seja %s
+
+pyformat.info é um local de pesquisa para as formatações
+
+Formatar casas decimais do float: %.[número de casas decimais]f
+Ex: %.3f retorna 34.355
+
+Formatar dígitos em decimal: %[0][número de casas decimais]d
+
+PARÂMETROS NOMERADOS(placeholder): quando temos muitos parâmetros para 
+informar em um texto, utilizamos a variável a ser utilizada em parênteses
+e 's' ou outro formatador (d, f, etc...) ao final,sempre iniciando com %.
+Ex:
+
+msg "Olá, %(nome_da_pessoa)s, gostaria de viajar para %(nome_do_pais)s?"
+
+nome_da_pessoa = "Pessoa", nome_do_pais = "Japão"
+
+msg % {"nome_da_pessoa": nome_da_pessoa, "nome_do_pais": nome_do_pais}
+
+O que está sendo realizado é: utilizar a interpolação, com parâmetros
+nomeado e o mapeamento desses parâmetros, os quais são passados para a
+interpolação através de um dicionário {"chave": valor}
+
+Uma forma rápida de verificar os tipos de formatção é atrvés da ajuda
+no ipython:
+
+help("FORMATTING")
+
+String format (str.format): todo objeto string tem um método chamado
+format. Nele, utilizamos as chaves ao invés de porcentagem. São marcados
+os espaços onde serão colocados os valores. Ex:
+
+msg = "Olá, {}! Você tem {} idade e possui {} dinheiros!"
+
+msg.format("Meu Nome", idade, float)
+
+Para formatar, utilizamos {:03d} ou {:.3f}
+
+É preferível utilizar o str.format para formatar strings.
+
+Para centralizar textos, utilizamos a seguinte formatação:
+
+"{:^11}" = o circunflexo solicita a centralização e o número informa o
+total de caracteres.
+
+Para a esquerda:
+
+"{:<11}"
+
+Direita:
+
+"{:>11}"
+
+para realizar preenchimento nos espaços:
+
+"{:*^11}" = "****Rafael****"
+
+Para formatação com string.format, também podemos utilizar parâmetros
+nomeados. Ex:
+msg = "Seu nome é {nome}, sua idade é {idade} e você ganhou {valor} reais!"
+msg.format(nome="Rafael", idade=32, valor=100)
+
+f-strings:
+
+f"Olá, {nome}"
+nome = "Rafael"
+"olá, Rafael"
+
+Ou seja, sempre que tivermos uma f-string, será necessário colocar o
+nome da variável dentro dos placeholders
+
+Imprimir emojis no python:
+
+print("\U000[código do UTF-8]")
+
+ou
+
+print("\N{[nome do emoji]}")
+

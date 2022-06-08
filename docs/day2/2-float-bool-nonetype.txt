@@ -1,0 +1,27 @@
+Float é um valor que possui ponto, ou seja, que exibe a parte inteira
+e a parte decimal.
+
+É utilizado para mostrar divisões, latitudes, longitudes, valores com
+pontos, etc.
+
+Boolean(objeto bool) implementa a lógica booleana. Geralmente é utilizado
+para criar flags. Um produto indisponível numa loja, por exemplo, pode ser
+exibido como False - ou seja, indisponível para venda.
+
+Nonetype - armazena o valor NONE. Significa nulo, ausência de valor.
+Representam variáveis que ainda não tem um valor definido. É para 
+inicializar variáveis que serão utilizadas no futuro, mas que atualmente
+não possuem valor definido.
+
+None é um tipo de objeto conhecido como Singleton. Um singleton só
+é criado uma vez no programa inteiro. De modo que, se a variável
+a é igual a None(a = None) e a variável b também é igual a None
+(b = None), a será igual a b, ou seja, a == b é True, pois todos
+são o mesmo objeto, o mesmo local de memória.
+
+Toda função em Python retorna um objeto. Caso atribuamos um retorno de
+função a uma variável, como, por exemplo
+
+	a = print("Life!")
+
+e verififcarmos o tipo de "a"(type(a)), veremos que o tipo é None

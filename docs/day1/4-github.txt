@@ -1,0 +1,25 @@
+Para criar repositório no github:
+	 criamos um repositório com o nome desejado
+	 copiamos o endereço do SSH e fazemos um "git clone [endereço SSH]"
+
+Configurações globais do git:
+
+	git config --global user.name "NAME"
+	git config --global user.email "e-mail igual ao do github"
+
+gerar chaves ssh:
+
+	ssh --keygen
+
+Para verificar os logs no repositório:
+
+	git log
+
+Para verificar a diferença entre versões após alterações e antes de 
+commits:
+
+	git diff
+
+Para commitar com pausas interativas(para cada mudança, ele vai solicitar um OK):
+
+	git commit -p

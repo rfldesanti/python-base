@@ -1,0 +1,47 @@
+Textos - objeto do tipo string. Ocorre quando atribuímos algo entre apas
+para alguma variável: nome = "Meu nome"
+
+O Python cria, como string, um tipo entre primário e composto. Ele armazena
+um grupo de caracteres. Cada caractere é um objeto. Ao encadear vários
+caracteres de uma vez só, temos uma lista de bytes, uma string, uma lista
+de objetos.
+
+Para formar a string, o Python utiliza um padrão - o ASCII. Basicamente,
+ASCII está armazenada como tabela no sistema operacional, onde existe a
+correspondência entre números e letras. Possui 127 caracteres. Os
+primeiros caracteres são caracteres de controle.
+
+Em razão dos diversos idiomas não suportador por ASCII, for criado o
+UNICODE - codificação universal.
+
+A tabela UNICODE possui 120.000 caracteres.
+
+Atualmente utilizamos a tabela utf-8, onde cada letra é armazenada em
+8 bits.
+
+Serialização é um processo de transformação. É uma representação de
+texto de algum objeto para que outro sistema, incapaz de ler o objeto
+no formato atual, possa recebê-lo e processá-lo. Para isso utiliza-se
+encoding e decoding.
+
+encodar = valor.encode("utf-8")
+decodar = encodar.decode()
+
+Também podemos exibir a decodificação em bytes, com:
+
+bytes(variavel, encode). Exemplificando: bytes(nome, "utf-8")
+
+O protocolo addible do Python é, dentro do objeto str, uma concatenação.
+
+Uma string também pode ser fatiada, ou seja, pegarmos os elementos
+que compõe a string. Para a variável nome, por exemplo, posso pegar
+cada posição individualmente:
+
+	nome[0]
+
+ou um intervalo da string nome[2:5]
+
+len(nome) - retorna o número de elementos dentro de um contêiner
+
+Se um objeto implementa o protocolo __iter__, significa que ele pode ser
+utilizado em um for, ou seja, em loops.

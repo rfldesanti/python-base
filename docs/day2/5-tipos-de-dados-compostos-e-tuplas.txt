@@ -1,0 +1,49 @@
+
+
+"Type: sequence" - um objeto NA MEMÓRIA que armazena posições, com
+cada posição sendo um tipo, um endereço e um valor, ou seja, objetos
+em sequência. Exemplo:
+
+cores = ("red", "green", "blue") - cada elemento é guardado em certos
+espaços de memória, com suas propriedades(tipo, valor, local de memória),
+e depois ele será "empacotado" em um só objeto, a sequência, que terá
+os APONTADORES para cada um dos objetos dentro do "pacote". É um objeto
+que faz referência a outros objetos. Em razão dessa configuração, chamamos
+esse tipo de "tipo composto" - um tipo que faz referência a outros tipos.
+
+Tuple(ou tupla) - é um tipo composto que cria uma sequência de objetos
+heterogêneos. Ex:
+
+("Rafa", 32, True, None, 101.55)
+
+Em uma tupla, podemos usar slicing, acesso à posição, verificar se tal
+dado existe na tupla ou não, etc. São diversos métodos, todos podendo
+ser verificados pelo comando dir(tuple) no ipython.
+
+Para criar tuple, podemos utilizar parênteses ou não. Em alguns casos,
+parênteses são necessários, outros não.
+
+UMA TUPLEA É IMUTÀVEL - ou seja, ela não pode ser alterada - remover
+elementos, adicionar, alterar valores, etc.
+
+Para desempacotar tuple: associamos variáveis às posições de cada 
+elemento da tupla. Ex: x, y, z = pontos, sendo que pontos = (2, 1, 99)
+
+Ao utilizar "*" antes de alguma variável que vai assumir o valor
+de um elemento de uma tupla, essa variável irá receber uma lista
+contendo todos os valores disponíveis a partir daquela posição.
+Ex:
+
+pontos = (1, 5, 4)
+x, *b = pontos
+x = 1
+b = [5, 4]
+
+Em Python, existe a conveção de que o "_" (underline) é o local
+onde a necessidade dos dados da tuple é descartada. Ou seja, 
+aquela lista que foi atribuída a uma variável não será utilizada,
+e por isso irá receber mais de um dado.
+
+"head", "body" e "tail" também são utilizados para unpacking de tuplas.
+Head é o primeiro, *body todos os elementos com exceção do tail, ou seja,
+do último.
