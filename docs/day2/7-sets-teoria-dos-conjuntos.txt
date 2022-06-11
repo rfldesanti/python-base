@@ -1,0 +1,80 @@
+
+
+Sets (ou conjuntos) - teoria dos conjuntos RESOLVEM PROBLEMAS REAIS EM
+SOFTWARES
+
+Duas maneiras de criar conjuntos:
+
+	1 - c1 = {1, 2, 3} - conjunto de números com 3 elementos.
+	Utiliza chaves. O problema de criar conjuntos com essa sintaxe
+	é que se pode confundir com dicionários(outro tipo de dados) e
+	também confundido com tuplas.
+	
+	2 - utilizando a classe set() - assim, fica explícito o tipo
+	de dado. Para a classe set, passamos como argumento UM TIPO
+	ITERÁVEL. Ex: a = set(range(0, 10))
+
+Uma característica dos conjuntos é que ele:
+	- NÃO É ORDENADO
+	- OS ELEMENTOS SÃO ÚNICOS
+
+Logo, quando quiser dividir itens duplicados e desejar somente itens
+distintos na sua coleção, basta utilizar o set.
+
+Operações de sets:
+
+	*unindo conjuntos:
+
+	conjunto_a = [1, 2, 3, 4, 5]
+	conjunto_b = [4, 5, 6, 7, 8]
+
+	união:
+
+	set(conjunto_a) | set(conjunto_b) - utilizando PIPE
+	{1, 2, 3, 4, 5, 6, 7, 8}
+
+	Pode-se também utilizar o UNION:
+	set(conjunto_a).union(set(conjunto_b))
+
+	O mais recomendável é já criar os conjuntos prontos, sem
+	precisar transformar depois
+
+	*interseção:
+
+	Quais números temos nos dois conjuntos?
+	(considerar as variáveis "conjunto" como tipos set)
+	conjunto_a.intersection(conjunto_b)
+	ou
+	conjunto_a & conjunto_b
+
+	*diferença:
+	Quais elementos não estão em determinado conjunto?
+	conjunto_a - conjunto_b
+	ou
+	conjunto_a.difference(conjunto_b)
+
+	*diferença simétrica:
+	elementos exclusivos de determinado conjunto em
+	comparação com outro:
+	conjunto_a.symmetric_difference(conjunto_b)
+	ou
+	conjunto_a ^ conjunto_b
+
+Sets são OBJETOS DE TRANSIÇÃO, ou seja, não queremos utilizá-los para
+manipular dados, mas sim para organizá-los e nos auxiliar a resolver
+determinados problemas.
+
+Um set pode ser criado vazio. Com o método add(), podemos adicionar
+elementos ao conjunto. Como sets são de natureza de elementos únicos,
+não é possível adicionar elementos repetitivos.
+
+Sets implementam HASH TABLE. Hash table resolve a complexidade
+algorítmica na hora de realizar a busca em coleções. A busca em
+coleções com o protocolo "in" realiza um SCAN em toda a coleção, ou seja,
+é uma operação demorada. Temos um Big O constante ao realizar uma pesquisa
+na coleção do set.
+
+Set não é utilizado quando:
+	- precisamos de duplicados
+	- manter a ordenação
+	- precisar de subscrição(set[0] não funciona)
