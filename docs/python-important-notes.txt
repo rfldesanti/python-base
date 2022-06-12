@@ -9,3 +9,7 @@
     de formatação;
 7 - É importante saber os protocolos dos objetos python para dominar a 
     linguagem. Os protocolos são "os métodos dunder";
+8 - Toda função e todo tipo em Python está em um dicionário. Fazer
+    int__dict__, por exemplo, exibe o dicionário de int, e fazer
+    __builtins__.__dict__ exibe um dicionário com TODAS as funções
+    do Python
