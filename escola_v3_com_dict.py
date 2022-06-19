@@ -12,28 +12,22 @@ salas = {
         "sala2": ["Joao", "Antonio", "Carlos", "Maria", "Isolda"],
 }
 
-aulas = {
-        "aula_ingles": ["Erik", "Maia", "Joana", "Carlos", "Antonio"],
-        "aula_musica": ["Erik", "Carlos", "Maria"],
-        "aula_danca": ["Gustavo", "Sofia", "Joana", "Antonio"],
-}
-
 atividades = { 
-        "Inglês": aulas["aula_ingles"],
-        "Música": aulas["aula_musica"],
-        "Dança": aulas["aula_danca"],
+        "Inglês": ["Erik", "Maia", "Joana", "Carlos", "Antonio"],
+        "Música": ["Erik", "Carlos", "Maria"],
+        "Dança": ["Gustavo", "Sofia", "Joana", "Antonio"],
 }
 
 # Listar alunos em cada atividade por sala
 
-for nome_da_atividade, atividade in atividades.items():
+for nome_da_atividade, alunos in atividades.items():
 
     print(f"Alunos da atividade {nome_da_atividade}:\n")
 
     # refatoração com set
     # retornar intersecção de alunos de cada sala com atividade
-    atividade_sala1 = set(salas["sala1"]) & set(atividade)
-    atividade_sala2 = set(salas["sala2"]).intersection(set(atividade))
+    atividade_sala1 = set(salas["sala1"]) & set(alunos)
+    atividade_sala2 = set(salas["sala2"]).intersection(set(alunos))
 
     print("Sala1: ", atividade_sala1)
     print("Sala2: ", atividade_sala2)

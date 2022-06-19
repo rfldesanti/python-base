@@ -10,6 +10,10 @@ Tenha a variavel LANG devidamente configurada. Ex:
 
     export LANG=pt_BR
 
+Ou utilize o argumento de CLI --lang=
+
+Ou o usuário deve informar uma língua
+
 Execução:
 
     python3 hello.py
@@ -21,18 +25,41 @@ __author__ = "Rafael"
 __license__ = "Unlicense"
 
 import os
+import sys
 
-current_language = os.getenv("LANG", "en_US")[:5]
-# another way to do the same as the code above:
-# current_language = os.getenv("LANG", "en_US").split(".")[0]
+arguments = {
+        "lang": None,
+        "count": 1,
+}
+for arg in sys.argv[1:]:
+    # TODO: Tratar ValueError
+    key, value = arg.split("=")
+    key = key.lstrip("-").strip()
+    value = value.strip()
+    if key not in arguments:
+        print(f"Invalid Option: '{key}'")
+        sys.exit()
+    arguments[key] = value
+    
+current_language = arguments["lang"]
+if current_language is None:
+    # TODO usar repetição
+    if "LANG" in os.environ:
+        current_language = os.getenv("LANG")
+    else:
+        current_language = input(
+                "Choose a language: "
+        )
+
+
+current_language = current_language[:5]
 
 msg = {
-        "en-US": "Hello, World!",
-        "pt_BR": "Olá, Mundo!",
-        "it_IT": "Ciao, Mondo!",
-        "es_SP": "Hola, Mundo!",
-        "fr_FR": "Bonjour, Monde!",
+        "en_US": "Hello, World! ",
+        "pt_BR": "Olá, Mundo! ",
+        "it_IT": "Ciao, Mondo! ",
+        "es_SP": "Hola, Mundo! ",
+        "fr_FR": "Bonjour, Monde! ",
 }
 
-print(msg[current_language])
-
+print(msg[current_language] * int(arguments["count"]))
